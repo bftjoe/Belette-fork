@@ -1,5 +1,4 @@
-#ifndef BITBOARD_H_INCLUDED
-#define BITBOARD_H_INCLUDED
+#pragma once
 
 #include <immintrin.h>
 #include <cassert>
@@ -105,4 +104,3 @@ inline Bitboard betweenBB(Square from, Square to) {
 
 } /* namespace Belette */
 
-#endif /* BITBOARD_H_INCLUDED */

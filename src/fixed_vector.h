@@ -1,5 +1,4 @@
-#ifndef FIXED_VECTOR_H_INCLUDED
-#define FIXED_VECTOR_H_INCLUDED
+#pragma once
 
 #include <initializer_list>
 #include <cassert>
@@ -80,4 +79,3 @@ public:
 
 } /* namespace Belette */
 
-#endif /* FIXED_VECTOR_H_INCLUDED */

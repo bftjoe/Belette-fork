@@ -1,5 +1,4 @@
-#ifndef POSITION_H_INCLUDED
-#define POSITION_H_INCLUDED
+#pragma once
 
 #include <string>
 #include <array>
@@ -254,4 +253,3 @@ inline uint64_t Position::getHashAfter(Move m) const {
 
 } /* namespace Belette */
 
-#endif /* POSITION_H_INCLUDED */

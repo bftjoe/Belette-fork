@@ -1,5 +1,4 @@
-#ifndef UCI_H_INCLUDED
-#define UCI_H_INCLUDED
+#pragma once
 
 #include <map>
 #include <string>
@@ -126,4 +125,3 @@ private:
 
 } /* namespace Belette */
 
-#endif /* UCI_H_INCLUDED */

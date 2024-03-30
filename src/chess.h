@@ -1,5 +1,4 @@
-#ifndef CHESS_H_INCLUDED
-#define CHESS_H_INCLUDED
+#pragma once
 
 #include <cstdint>
 #include <cassert>
@@ -352,4 +351,3 @@ inline Bitboard  operator|(Square s1, Square s2) { return bb(s1) | bb(s2); }
 
 } /* namespace Belette */
 
-#endif /* CHESS_H_INCLUDED */

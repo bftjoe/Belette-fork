@@ -1,5 +1,4 @@
-#ifndef MOVEHISTORY_H_INCLUDED
-#define MOVEHISTORY_H_INCLUDED
+#pragma once
 
 #include <cstdint>
 #include "chess.h"
@@ -84,4 +83,3 @@ private:
 
 } /* namespace Belette */
 
-#endif /* MOVEHISTORY_H_INCLUDED */

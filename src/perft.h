@@ -1,5 +1,4 @@
-#ifndef PERFT_H_INCLUDED
-#define PERFT_H_INCLUDED
+#pragma once
 
 #include "chess.h"
 #include "position.h"
@@ -14,4 +13,3 @@ void perftmp(Position &pos, int depth);
 
 } /* namespace Belette */
 
-#endif /* PERFT_H_INCLUDED */

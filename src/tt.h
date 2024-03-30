@@ -1,5 +1,4 @@
-#ifndef TT_H_INCLUDED
-#define TT_H_INCLUDED
+#pragma once
 
 #include <cstdlib>
 #include <cstdint>
@@ -108,4 +107,3 @@ extern TranspositionTable tt;
 
 } /* namespace Belette */
 
-#endif /* TT_H_INCLUDED */

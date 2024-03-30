@@ -1,5 +1,4 @@
-#ifndef ZOBRIST_H_INCLUDED
-#define ZOBRIST_H_INCLUDED
+#pragma once
 
 #include "chess.h"
 
@@ -16,4 +15,3 @@ namespace Zobrist {
 
 } /* namespace Belette */
 
-#endif /* ZOBRIST_H_INCLUDED */

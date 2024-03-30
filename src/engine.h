@@ -1,5 +1,4 @@
-#ifndef ENGINE_H_INCLUDED
-#define ENGINE_H_INCLUDED
+#pragma once
 
 #include <memory>
 #include "chess.h"
@@ -128,4 +127,3 @@ private:
 
 } /* namespace Belette */
 
-#endif /* ENGINE_H_INCLUDED */

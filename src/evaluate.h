@@ -1,5 +1,4 @@
-#ifndef EVALUATE_H_INCLUDED
-#define EVALUATE_H_INCLUDED
+#pragma once
 
 #include "chess.h"
 #include "position.h"
@@ -199,4 +198,3 @@ inline Score evaluate(const Position &pos) {
 
 } /* namespace Belette */
 
-#endif /* EVALUATE_H_INCLUDED */
