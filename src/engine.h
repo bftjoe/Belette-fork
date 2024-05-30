@@ -6,7 +6,6 @@
 #include "evaluate.h"
 #include "movegen.h"
 #include "movehistory.h"
-#include "movepicker.h"
 #include "tt.h"
 #include "utils.h"
 
@@ -20,12 +19,6 @@ struct SearchLimits {
     size_t maxNodes = 0;
     TimeMs maxTime = 0;
     MoveList searchMoves;
-};
-
-struct Node {
-    Score staticEval;
-    MoveList pv;
-    //MovePicker mp;
 };
 
 struct SearchData {
@@ -63,8 +56,6 @@ struct SearchData {
         return false;
     }
 
-    inline Node &node(int ply) { assert(ply >= 0 && ply < MAX_PLY); return nodes[ply]; }
-
     Position position;
     SearchLimits limits;
     size_t nbNodes;
@@ -75,8 +66,6 @@ struct SearchData {
     TimeMs allocatedTime;
 
     MoveHistory moveHistory;
-
-    Node nodes[MAX_PLY+1];
 };
 
 struct SearchEvent {
@@ -131,7 +120,7 @@ private:
     inline void idSearch() { rootPosition.getSideToMove() == WHITE ? idSearch<WHITE>() : idSearch<BLACK>(); }
     template<Side Me> void idSearch();
 
-    template<Side Me, NodeType NT> Score pvSearch(Score alpha, Score beta, int depth, int ply, bool cutNode);
+    template<Side Me, NodeType NT> Score pvSearch(Score alpha, Score beta, int depth, int ply, MoveList &pv, bool cutNode);
 
     template<Side Me, NodeType NT> Score qSearch(Score alpha, Score beta, int depth, int ply);
 };
